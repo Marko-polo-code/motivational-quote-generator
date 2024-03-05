@@ -22,3 +22,14 @@ const part3 = [
   "of success",
   "make the most of it"
 ];
+
+// Generate a random index for each part of the message
+
+const generateQuote = () => {
+  const index1 =  Math.floor(Math.random() * part1.length);
+  const index2 =  Math.floor(Math.random() * part2.length);
+  const index3 =  Math.floor(Math.random() * part1.length);
+
+  const quote = `${part1[index1]} ${part2[index2]} ${part3[index3]}.`;
+  return quote;
+}
